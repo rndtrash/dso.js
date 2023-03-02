@@ -33,6 +33,8 @@ const scan = function ( code )
 		const op      = code[ip];
 		const subtype = getOpcodeSubtype (op);
 
+		console.log(`DEBUG: ${op}, ${subtype}`);
+
 		if ( subtype === 'OpcodeJumpIfNot' )
 		{
 			this.addBlock (ip, code[ip + 1], this).scan (code);

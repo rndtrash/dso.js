@@ -16,7 +16,10 @@
     "url": "https://github.com/Electrk/dso.js/issues"
   },
   "homepage": "https://github.com/Electrk/dso.js#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^8.2.5"
+  },
   "devDependencies": {
     "@babel/plugin-transform-regenerator": "^7.10.4",
     "regenerator-runtime": "^0.13.7",

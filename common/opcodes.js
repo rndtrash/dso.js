@@ -12,18 +12,30 @@ const names =
 	'FILLER1',                     /*  0x04  */
 	'OP_ADD_OBJECT',               /*  0x05  */
 	'FILLER2',                     /*  0x06  */
-	'OP_CALLFUNC_RESOLVE',         /*  0x07  */
+	
+//	'OP_CALLFUNC_RESOLVE',         /*  0x07  */
+	'OP_PLACEHOLDER',              /*  0x07  */ // rndtrash: not sure what goes here ATM
+	
 	'OP_FLT_TO_UINT',              /*  0x08  */
-	'OP_FLT_TO_STR',               /*  0x09  */
+
+//	'OP_FLT_TO_STR',               /*  0x09  */
+	'OP_ADD_OBJECT',               /*  0x09  */ // rndtrash: you get the idea
+
 	'OP_STR_TO_NONE_2',            /*  0x0A  */
-	'OP_LOADVAR_UINT',             /*  0x0B  */
+	
+//	'OP_LOADVAR_UINT',             /*  0x0B  */
+	'OP_CALLFUNC_RESOLVE',         /*  0x0B  */  // rndtrash: from Blockland v20
+	
 	'OP_SAVEVAR_STR',              /*  0x0C  */
 	'OP_JMPIFNOT',                 /*  0x0D  */
 	'OP_SAVEVAR_FLT',              /*  0x0E  */
 	'OP_LOADIMMED_UINT',           /*  0x0F  */
 	'OP_LOADIMMED_FLT',            /*  0x10  */
 	'OP_LOADIMMED_IDENT',          /*  0x11  */
-	'OP_TAG_TO_STR',               /*  0x12  */
+	
+//	'OP_TAG_TO_STR',               /*  0x12  */
+	'OP_PLACEHOLDER___',           /*  0x12  */ // rndtrash:
+	
 	'OP_LOADIMMED_STR',            /*  0x13  */
 	'OP_ADVANCE_STR_APPENDCHAR',   /*  0x14  */
 	'OP_TERMINATE_REWIND_STR',     /*  0x15  */
@@ -32,8 +44,13 @@ const names =
 	'OP_SETCURFIELD',              /*  0x18  */
 	'OP_SETCURFIELD_ARRAY',        /*  0x19  */
 	'OP_JMPIF_NP',                 /*  0x1A  */
-	'OP_JMPIFF',                   /*  0x1B  */
-	'OP_JMP',                      /*  0x1C  */
+
+//	'OP_JMPIFF',                   /*  0x1B  */
+	'OP_JMP',                      /*  0x1B  */ // rndtrash:
+	
+//	'OP_JMP',                      /*  0x1C  */
+	'OP_INVALID',                  /*  0x1C  */ // rndtrash: from Blockland v20
+	
 	'OP_BITOR',                    /*  0x1D  */
 	'OP_SHL',                      /*  0x1E  */
 	'OP_SHR',                      /*  0x1F  */
@@ -61,8 +78,13 @@ const names =
 	'OP_SUB',                      /*  0x35  */
 	'OP_MUL',                      /*  0x36  */
 	'OP_DIV',                      /*  0x37  */
-	'OP_NEG',                      /*  0x38  */
-	'OP_INVALID',                  /*  0x39  */
+	
+//	'OP_NEG',                      /*  0x38  */
+	'OP_TAG_TO_STR',               /*  0x38  */ // rndtrash:
+
+//	'OP_INVALID',                  /*  0x39  */
+	'OP_LOADIMMED_STR',            /*  0x39  */ // rndtrash:
+
 	'OP_STR_TO_FLT',               /*  0x3A  */
 	'OP_END_OBJECT',               /*  0x3B  */
 	'OP_CMPLT',                    /*  0x3C  */
