@@ -11,6 +11,8 @@ const parseNext = function ()
 
 	const { type } = token;
 
+	console.log(`DEBUG: ${JSON.stringify(token)} (${type}) @ ${tokenPos}`);
+
 	switch ( type )
 	{
 		case 'OpcodeLoadImmed':
@@ -81,6 +83,12 @@ const parseNext = function ()
 		case 'OpcodeFuncDecl':
 		{
 			return this.parseFuncDecl (token);
+		}
+
+		case 'OpcodeFuncCall':
+		{
+			console.log('DEBUG: not handling function calls!');
+			return null;
 		}
 
 		default:

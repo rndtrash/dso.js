@@ -33,7 +33,7 @@ const scan = function ( code )
 		const op      = code[ip];
 		const subtype = getOpcodeSubtype (op);
 
-		console.log(`DEBUG: ${op}, ${subtype}`);
+		console.log(`DEBUG: 0x${op < 0x10 ? "0" : ""}${op.toString(16)}, ${subtype}`);
 
 		if ( subtype === 'OpcodeJumpIfNot' )
 		{

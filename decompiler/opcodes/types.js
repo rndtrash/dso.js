@@ -61,6 +61,9 @@ const opcodeTypes =
 		'OP_PUSH',
 		'OP_RETURN',
 		'OP_BREAK',
+
+		'OP_NOOP', // rndtrash: no-op
+		'OP_ADVANCE_STR_NUL_1', // rndtrash: alias
 	]),
 
 	// Opcodes with a single value after them.

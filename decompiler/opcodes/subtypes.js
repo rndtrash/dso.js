@@ -203,6 +203,8 @@ const opcodeSubtypes =
 	OpcodeSkip: createOpset (
 	[
 		'OP_ADVANCE_STR_NUL',
+		'OP_ADVANCE_STR_NUL_1',
+		'OP_NOOP',
 	]),
 
 	// Opcodes that throw an error should we come across them.
