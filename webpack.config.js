@@ -39,7 +39,8 @@ module.exports =
 
 	optimization:
 	{
-    	minimize: true,
+	// TODO: i'm tired of these weird ass stacktraces
+/*    	minimize: true,
 		minimizer:
 		[
 			new TerserPlugin (
@@ -50,7 +51,8 @@ module.exports =
 					keep_fnames:     true,
 				},
 			}),
-		],
+		],*/
+		minimize: false,
 	},
 
 	resolve:
