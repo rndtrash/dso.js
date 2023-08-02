@@ -6,13 +6,30 @@ import dso_js from './dist/dso.js';
 const { dso } = dso_js;
 const { decompiler } = dso;
 
-//reverse('/home/ivan/games/Blockland v20/base/main-Vanilla.cs.dso')
-//reverse('/home/ivan/games/Blockland v20/base/client/mission.cs.dso');
-reverse('/home/ivan/games/Blockland v20/base/server/defaultMusicList.cs.dso');
-//reverse('/home/ivan/games/Blockland v20/base/client/audio.cs.dso');
-//reverse('/home/ivan/games/Blockland v20/base/client/canvas.cs.dso');
-//reverse('/home/ivan/games/Blockland v20/base/server/init.cs.dso');
-reverse('/home/ivan/games/Blockland v20/base/client/actionMap.cs.dso');
+reverse("./dso/server/scripts/allGameScripts.cs.dso");
+reverse("./dso/server/scripts/DamageTypes.cs.dso");
+reverse("./dso/server/scripts/game.cs.dso");
+reverse("./dso/server/defaultMusicList.cs.dso");
+reverse("./dso/server/defaultAddOnList.cs.dso");
+reverse("./dso/server/defaults.cs.dso");
+reverse("./dso/server/init.cs.dso");
+reverse("./dso/server/mainServer.cs.dso");
+		 
+reverse("./dso/client/scripts/allClientScripts.cs.dso");
+reverse("./dso/client/actionMap.cs.dso");
+reverse("./dso/client/audio.cs.dso");
+reverse("./dso/client/canvas.cs.dso");
+reverse("./dso/client/defaults.cs.dso");
+reverse("./dso/client/init.cs.dso");
+reverse("./dso/client/message.cs.dso");
+reverse("./dso/client/mission.cs.dso");
+reverse("./dso/client/missionDownload.cs.dso");
+		 
+		 
+reverse("./dso/client/ui/allClientGuis.gui.dso");
+		 
+reverse("./dso/main.cs.dso");
+
 function reverse(dsoPath) {
 	fs.readFile (dsoPath, ( error, buffer ) =>
 	{
