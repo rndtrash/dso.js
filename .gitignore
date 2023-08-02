@@ -67,6 +67,8 @@ typings/
 # TorqueScript files
 *.cs
 *.cs.dso
+*.gui
+*.gui.dso
 
 # Executable file
 *.exe
